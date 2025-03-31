@@ -1,0 +1,15 @@
+{
+  "name": "DO_Practical_4_Q2",
+  "version": "1.0.0",
+  "description": "Practical 4 Q2 Node.js app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "stop": "taskkill /F /IM node.exe"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "Vedang Prashant Shelatkar",
+  "license": "ISC"
+}
