@@ -87,6 +87,16 @@ app.post('/login', (req, res) => {
 });
 
 // Start the server
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
+
+    // Stop server after 120 seconds
+    setTimeout(() => {
+        console.log('Shutting down server...');
+        server.close(() => {
+            console.log('Server stopped.');
+            process.exit(0);  // Exit process
+        });
+    }, 60000);
 });
